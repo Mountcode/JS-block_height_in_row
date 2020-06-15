@@ -16,7 +16,7 @@ function findEachElements(elemsContainer){
 			if(itm == 0){
 					var currentsRow = ElOffset(allInnerBlocks[itm]);
 			}
-			if(currentsRow < ElOffset(allInnerBlocks[itm]) ){
+			if(currentsRow == ElOffset(allInnerBlocks[itm]) ){
 					elementsInRow++
 			}
 
@@ -25,6 +25,7 @@ function findEachElements(elemsContainer){
 			if (itm+1 == allInnerBlocks.length){
 					getRows(elementsList, elementsInRow);
 			}
+			
 	}
 }
 
